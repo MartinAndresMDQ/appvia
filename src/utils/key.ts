@@ -464,7 +464,7 @@ function buildLayerMenu(): IKeycodeMenu {
   };
 }
 
-function generateMacros(numMacros: number = 16): IKeycode[] {
+function generateMacros(numMacros: number = 20): IKeycode[] {
   let res: IKeycode[] = [];
   for (let idx = 0; idx < numMacros; idx++) {
     const newName = `M${idx}`;
@@ -479,7 +479,7 @@ function generateMacros(numMacros: number = 16): IKeycode[] {
 }
 
 
-export function getKeycodes(numMacros = 16): IKeycodeMenu[] {
+export function getKeycodes(numMacros = 20): IKeycodeMenu[] {
   return [
     {
       id: 'basic',
